@@ -18,4 +18,10 @@ public abstract class Electrodomestico {
     public static final char CONSUMO_ENERGETICO = 'F';
     public static final float PESO = 5;
     
+    // Colores disponibles    
+    protected String[] availableColor =  {"blanco", "gris", "azul", "rojo", "negro"};
+    
+    // consumo energetico disponible
+    protected char[] availableConsumptionEnergy = {'A', 'B', 'C', 'D', 'E', 'F'};
+    
 }
