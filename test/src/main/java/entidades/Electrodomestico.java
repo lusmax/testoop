@@ -38,14 +38,15 @@ public abstract class Electrodomestico {
         this.color = Electrodomestico.COLOR;
         this.consumoEnergetico = Electrodomestico.CONSUMO_ENERGETICO;
     }
-    public Electrodomestico(float precio, float peso, String color, char consumoEnergetico){
+
+    public Electrodomestico(float precio, float peso, String color, char consumoEnergetico) {
         this.percioBase = precio;
         this.peso = peso;
         this.color = color;
         this.consumoEnergetico = consumoEnergetico;
     }
-    //getters
 
+    //getters
     public float getPercioBase() {
         return this.percioBase;
     }
@@ -61,6 +62,22 @@ public abstract class Electrodomestico {
     public float getPeso() {
         return this.peso;
     }
-    
+
+    //setters
+    public void setPercioBase(float percioBase) {
+        this.percioBase = percioBase;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setConsumoEnergetico(char consumoEnergetico) {
+        this.consumoEnergetico = consumoEnergetico;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
 
 }
