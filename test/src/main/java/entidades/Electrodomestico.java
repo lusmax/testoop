@@ -7,7 +7,7 @@ package entidades;
 public abstract class Electrodomestico {
 
     // atributos
-    protected float percioBase;
+    protected float precioBase;
     protected String color;
     protected char consumoEnergetico;
     protected float peso;
@@ -26,29 +26,29 @@ public abstract class Electrodomestico {
 
     //constructores
     public Electrodomestico() {
-        this.percioBase = Electrodomestico.PRECIO_BASE;
+        this.precioBase = Electrodomestico.PRECIO_BASE;
         this.color = Electrodomestico.COLOR;
         this.consumoEnergetico = Electrodomestico.CONSUMO_ENERGETICO;
         this.peso = Electrodomestico.PESO;
     }
 
     public Electrodomestico(float precio, float peso) {
-        this.percioBase = precio;
+        this.precioBase = precio;
         this.peso = peso;
         this.color = Electrodomestico.COLOR;
         this.consumoEnergetico = Electrodomestico.CONSUMO_ENERGETICO;
     }
 
     public Electrodomestico(float precio, float peso, String color, char consumoEnergetico) {
-        this.percioBase = precio;
+        this.precioBase = precio;
         this.peso = peso;
         this.color = color;
         this.consumoEnergetico = consumoEnergetico;
     }
 
     //getters
-    public float getPercioBase() {
-        return this.percioBase;
+    public float getPrecioBase() {
+        return this.precioBase;
     }
 
     public String getColor() {
@@ -64,8 +64,8 @@ public abstract class Electrodomestico {
     }
 
     //setters
-    public void setPercioBase(float percioBase) {
-        this.percioBase = percioBase;
+    public void setPrecioBase(float precioBase) {
+        this.precioBase = precioBase;
     }
 
     public void setColor(String color) {
@@ -78,6 +78,12 @@ public abstract class Electrodomestico {
 
     public void setPeso(float peso) {
         this.peso = peso;
+    }
+    //metodos
+
+    @Override
+    public String toString() {
+        return "Electrodomestico{" + "precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico=" + consumoEnergetico + ", peso=" + peso + '}';
     }
 
 }
